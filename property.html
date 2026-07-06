@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>West Ealing House | 5BR Contractor & Corporate Accommodation W13 | 3X Stays</title>
+<meta name="description" content="5-bedroom serviced accommodation in West Ealing W13. Sleeps 10. Ideal for contractor teams, corporate groups and families. 5 min walk to Elizabeth Line. From £360/night.">
+<link rel="canonical" href="https://310homes.com/property.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0D1B2A; --navy-mid: #111F30; --navy-light: #1A2E44;
+  --gold: #C9A84C; --cream: #F5F0E8; --cream-dim: #D4CEC4;
+  --white: #FFFFFF; --text-muted: #7A8A9A; --border: rgba(201,168,76,0.2);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--cream); line-height: 1.6; overflow-x: hidden; }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 5%; background: rgba(13,27,42,0.95);
+  backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
+}
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo img { height: 38px; }
+.nav-logo-text { font-size: 1.1rem; font-weight: 500; color: var(--white); letter-spacing: 0.05em; }
+.nav-logo-sub { display: block; font-size: 0.65rem; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: 2rem; }
+.nav-links a { color: var(--cream-dim); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-cta { background: var(--gold) !important; color: var(--navy) !important; padding: 0.6rem 1.4rem; font-weight: 600 !important; }
+
+/* Gallery */
+.gallery { padding-top: 80px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 4px; height: 520px; background: var(--navy-mid); }
+.gallery-main img { width: 100%; height: 520px; object-fit: cover; display: block; }
+.gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+.gallery-grid img { width: 100%; height: 258px; object-fit: cover; display: block; transition: filter 0.2s; }
+.gallery-grid img:hover { filter: brightness(1.1); }
+
+/* Property Info */
+.prop-wrap { display: grid; grid-template-columns: 1fr 340px; gap: 3rem; padding: 4rem 8%; align-items: start; }
+
+.prop-main {}
+.prop-title { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; color: var(--white); font-weight: 600; margin-bottom: 0.5rem; }
+.prop-location { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2rem; }
+.prop-stats { display: flex; gap: 0; border: 1px solid var(--border); margin-bottom: 2.5rem; }
+.prop-stat { flex: 1; text-align: center; padding: 1.2rem 0.5rem; border-right: 1px solid var(--border); }
+.prop-stat:last-child { border-right: none; }
+.prop-stat-val { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold); font-weight: 600; line-height: 1; }
+.prop-stat-label { display: block; font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 3px; }
+
+/* Bedrooms */
+.section-heading { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.2rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
+
+.bedrooms { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; margin-bottom: 3rem; }
+.bedroom img { width: 100%; height: 130px; object-fit: cover; display: block; }
+.bedroom-info { padding: 0.6rem 0; }
+.bedroom-info strong { display: block; font-size: 0.83rem; color: var(--white); font-weight: 500; }
+.bedroom-info span { font-size: 0.72rem; color: var(--text-muted); }
+
+/* Amenities */
+.amenities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 3rem; }
+.amenity { font-size: 0.83rem; color: var(--cream-dim); display: flex; gap: 0.5rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+.amenity::before { content: '✓'; color: var(--gold); font-weight: 700; }
+
+/* Who it's for */
+.for-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
+.for-card { border: 1px solid var(--border); padding: 1.5rem; background: rgba(201,168,76,0.02); }
+.for-card-title { font-size: 0.9rem; font-weight: 500; color: var(--white); margin-bottom: 0.5rem; }
+.for-card-text { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+
+/* Sidebar */
+.prop-sidebar { position: sticky; top: 100px; }
+.booking-card { background: var(--navy-light); border: 1px solid var(--border); padding: 2rem; margin-bottom: 1rem; }
+.booking-card-rate { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--white); font-weight: 600; line-height: 1; margin-bottom: 0.25rem; }
+.booking-card-rate span { font-size: 1rem; color: var(--text-muted); font-family: 'DM Sans', sans-serif; font-weight: 300; }
+.booking-card-note { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+.booking-btn { display: block; text-align: center; padding: 0.9rem; font-size: 0.83rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; margin-bottom: 0.75rem; transition: opacity 0.2s; font-family: 'DM Sans', sans-serif; }
+.booking-btn:hover { opacity: 0.85; }
+.booking-btn-airbnb { background: #FF5A5F; color: var(--white); }
+.booking-btn-bdc { background: #003580; color: var(--white); }
+.booking-btn-vrbo { background: #1D5FA4; color: var(--white); }
+.booking-btn-direct { background: var(--gold); color: var(--navy); }
+.booking-divider { text-align: center; font-size: 0.72rem; color: var(--text-muted); margin: 1rem 0; }
+
+.pricing-table { background: var(--navy-light); border: 1px solid var(--border); padding: 1.5rem; margin-bottom: 1rem; }
+.pricing-row { display: flex; justify-content: space-between; font-size: 0.83rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+.pricing-row:last-child { border-bottom: none; }
+.pricing-row span:first-child { color: var(--text-muted); }
+.pricing-row span:last-child { color: var(--white); font-weight: 500; }
+
+footer { background: var(--navy); border-top: 1px solid var(--border); padding: 2rem 8%; text-align: center; }
+footer p { font-size: 0.72rem; color: var(--text-muted); }
+
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.5s, transform 0.5s; }
+.fade-up.visible { opacity: 1; transform: none; }
+
+@media(max-width: 1024px) {
+  .gallery { grid-template-columns: 1fr; height: auto; }
+  .gallery-main img { height: 300px; }
+  .gallery-grid img { height: 150px; }
+  .prop-wrap { grid-template-columns: 1fr; }
+  .prop-sidebar { position: static; }
+  .bedrooms { grid-template-columns: repeat(3, 1fr); }
+}
+@media(max-width: 768px) {
+  .prop-wrap { padding: 2rem 5%; }
+  .bedrooms { grid-template-columns: repeat(2, 1fr); }
+  .amenities { grid-template-columns: 1fr 1fr; }
+  .for-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="logo.png" alt="3X Stays" onerror="this.style.display='none'">
+    <div>
+      <span class="nav-logo-text">3X STAYS</span>
+      <span class="nav-logo-sub">Premium Accommodation</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="/">← Back to 3X Stays</a>
+    <a href="https://www.airbnb.co.uk/rooms/1704349981176200060" target="_blank">Book on Airbnb</a>
+    <a href="mailto:naveed@310homes.com" class="nav-cta">Enquire Direct</a>
+  </div>
+</nav>
+
+<!-- Gallery -->
+<div class="gallery">
+  <div class="gallery-main">
+    <img src="QS8A8741-HDR.JPG" alt="West Ealing House living room — 3X Stays W13">
+  </div>
+  <div class="gallery-grid">
+    <img src="QS8A8801-HDR.JPG" alt="Kitchen">
+    <img src="QS8A8726-HDR.JPG" alt="Blue bedroom — Room 1">
+    <img src="QS8A8596-HDR.JPG" alt="Bathroom">
+    <img src="QS8A8821-HDR.JPG" alt="Garden">
+  </div>
+</div>
+
+<!-- Property Info -->
+<div class="prop-wrap">
+  <div class="prop-main">
+    <h1 class="prop-title fade-up">West Ealing House</h1>
+    <p class="prop-location fade-up">22 Coldershaw Road, West Ealing, London W13 9DX &nbsp;·&nbsp; 5 min walk to Elizabeth Line</p>
+
+    <div class="prop-stats fade-up">
+      <div class="prop-stat"><span class="prop-stat-val">5</span><span class="prop-stat-label">Bedrooms</span></div>
+      <div class="prop-stat"><span class="prop-stat-val">10</span><span class="prop-stat-label">Guests</span></div>
+      <div class="prop-stat"><span class="prop-stat-val">2.5</span><span class="prop-stat-label">Bathrooms</span></div>
+      <div class="prop-stat"><span class="prop-stat-val">3</span><span class="prop-stat-label">Floors</span></div>
+      <div class="prop-stat"><span class="prop-stat-val">W13</span><span class="prop-stat-label">West Ealing</span></div>
+    </div>
+
+    <!-- Bedrooms -->
+    <div class="section-heading fade-up">Bedrooms</div>
+    <div class="bedrooms fade-up">
+      <div class="bedroom">
+        <img src="QS8A8726-HDR.JPG" alt="Bedroom 1 — blue room, double bed">
+        <div class="bedroom-info"><strong>Bedroom 1</strong><span>1 double bed</span></div>
+      </div>
+      <div class="bedroom">
+        <img src="QS8A8691-HDR.JPG" alt="Bedroom 2 — pink room, double bed">
+        <div class="bedroom-info"><strong>Bedroom 2</strong><span>1 double bed</span></div>
+      </div>
+      <div class="bedroom">
+        <img src="QS8A8616-HDR.JPG" alt="Bedroom 3 — yellow room, twin beds">
+        <div class="bedroom-info"><strong>Bedroom 3</strong><span>2 single beds</span></div>
+      </div>
+      <div class="bedroom">
+        <img src="QS8A8541-HDR.JPG" alt="Bedroom 4 — green room, twin beds">
+        <div class="bedroom-info"><strong>Bedroom 4</strong><span>2 single beds</span></div>
+      </div>
+      <div class="bedroom">
+        <img src="QS8A8551-HDR.JPG" alt="Bedroom 5 — red room, twin beds">
+        <div class="bedroom-info"><strong>Bedroom 5</strong><span>2 single beds</span></div>
+      </div>
+    </div>
+
+    <!-- Amenities -->
+    <div class="section-heading fade-up">What's Included</div>
+    <div class="amenities fade-up">
+      <div class="amenity">Fast WiFi throughout</div>
+      <div class="amenity">Fully equipped kitchen</div>
+      <div class="amenity">Smart TV in every bedroom</div>
+      <div class="amenity">Dedicated workspace</div>
+      <div class="amenity">Free on-street parking</div>
+      <div class="amenity">Self check-in (lockbox)</div>
+      <div class="amenity">Washing machine &amp; dryer</div>
+      <div class="amenity">Dining area seats 10</div>
+      <div class="amenity">VAT invoicing available</div>
+      <div class="amenity">Company billing accepted</div>
+      <div class="amenity">Elizabeth Line &lt;1 mile</div>
+      <div class="amenity">Garden access</div>
+    </div>
+
+    <!-- Who it's for -->
+    <div class="section-heading fade-up">Who Stays Here</div>
+    <div class="for-grid fade-up">
+      <div class="for-card">
+        <div class="for-card-title">🏗️ Contractor Teams</div>
+        <div class="for-card-text">Ideal for HS2, Mace, Willmott Dixon and NHS teams needing a base near West London sites. VAT invoicing and company billing available.</div>
+      </div>
+      <div class="for-card">
+        <div class="for-card-title">💼 Corporate Groups</div>
+        <div class="for-card-text">One address, one kitchen, one bill — more practical than booking multiple hotel rooms for visiting teams or project staff.</div>
+      </div>
+      <div class="for-card">
+        <div class="for-card-title">👨‍👩‍👧‍👦 Families &amp; Groups</div>
+        <div class="for-card-text">Spacious 5-bedroom house with garden, ideal for families visiting London or group stays. Private rooms for everyone.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="prop-sidebar">
+    <div class="booking-card fade-up">
+      <div class="booking-card-rate">£360 <span>/ night</span></div>
+      <div class="booking-card-note">Base rate for up to 3 guests · Additional guests from £90/person/night</div>
+      <a href="https://www.airbnb.co.uk/rooms/1704349981176200060" target="_blank" rel="noopener" class="booking-btn booking-btn-airbnb">Book on Airbnb</a>
+      <a href="https://www.booking.com/hotel/gb/16649118" target="_blank" rel="noopener" class="booking-btn booking-btn-bdc">Book on Booking.com</a>
+      <a href="https://www.vrbo.com/12166413" target="_blank" rel="noopener" class="booking-btn booking-btn-vrbo">Book on VRBO</a>
+      <div class="booking-divider">— or enquire directly —</div>
+      <a href="mailto:naveed@310homes.com?subject=Direct booking enquiry — West Ealing House" class="booking-btn booking-btn-direct">Direct Enquiry</a>
+    </div>
+
+    <div class="pricing-table fade-up">
+      <div class="section-heading" style="margin-bottom:1rem;">Pricing</div>
+      <div class="pricing-row"><span>Base rate (1–3 guests)</span><span>£360/night</span></div>
+      <div class="pricing-row"><span>Extra guest</span><span>+£90/person/night</span></div>
+      <div class="pricing-row"><span>Cleaning fee</span><span>£150</span></div>
+      <div class="pricing-row"><span>Weekly discount</span><span>10% off</span></div>
+      <div class="pricing-row"><span>Monthly discount</span><span>20% off</span></div>
+      <div class="pricing-row"><span>Min. stay</span><span>2 nights</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 3X Stays · Trading name of 3X Homes Expert Solutions Ltd · Company No. 15452380 · ICO Reg. ZB662934</p>
+  <p style="margin-top:0.5rem;"><a href="/" style="color:var(--gold);text-decoration:none;">← Back to 3X Stays</a></p>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
